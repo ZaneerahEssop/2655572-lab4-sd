@@ -7,9 +7,7 @@ async function fetchCountryInfo() {
 
     const countryInfoSection = document.getElementById('country-info');
     const borderingCountriesSection = document.getElementById('bordering-countries');
-    countryInfoSection.innerHTML = 'Loading...';
-    borderingCountriesSection.innerHTML = '';
-
+  
     try {
         const response = await fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`);
         if (!response.ok) {
@@ -36,10 +34,10 @@ async function fetchCountryInfo() {
                     const borderData = await borderResponse.json();
                     const borderCountry = borderData[0];
                     borderingCountriesSection.innerHTML += `
-                        <div>
-                            <p>${borderCountry.name.common}</p>
+                        <section>
+                            <p><strong>${borderCountry.name.common}</strong></p>
                             <img src="${borderCountry.flags.svg}" alt="Flag of ${borderCountry.name.common}">
-                        </div>
+                        </section>
                     `;
                 }
             }
