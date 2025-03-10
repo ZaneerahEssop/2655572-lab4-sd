@@ -1,1 +1,56 @@
+body {
+    background: linear-gradient(to bottom right, #4ca0af, #2C3E50); /* Green to blue gradient diagonally */
+    font-family: Arial, sans-serif;
+    color: #161414;
+    padding: 20px;
+    text-align: center;
+}
+
+
+input {
+    padding: 8px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: black; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+button:hover {
+    transform: scale(1.1); 
+    background-color: #333; 
+}
+
+section {
+    margin-top: 20px;
+}
+
+#country-info {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+}
+
+#bordering-countries img {
+    width: 50px;
+    margin: 5px;
+    border: 1px solid #ddd;
+}
+
+
+
+
+
+
+
+
+
+
 
